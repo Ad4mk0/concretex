@@ -1,7 +1,0 @@
-&pwm_led0 {
-	pwms = <&pwm0 18>;
-};
-
-&pwm0 {
-	ch0-pin = <18>;
-};

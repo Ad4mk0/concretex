@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "scan.h": "c",
+        "hrs_client.h": "c",
+        "conn.h": "c"
+    },
+    "nrf-connect.debugging.bindings": {
+        "${workspaceFolder}/build": "Launch build"
+    }
+}

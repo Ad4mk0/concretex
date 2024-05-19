@@ -7,8 +7,12 @@ cmake_minimum_required(VERSION 3.20.0)
 find_package(Zephyr REQUIRED HINTS $ENV{ZEPHYR_BASE})
 project(central_and_peripheral_hr1)
 
-# NORDIC SDK APP START
-target_sources(app PRIVATE
-  src/main.c
-)
-# NORDIC SDK APP END
+# # NORDIC SDK APP START
+# target_sources(app PRIVATE
+#   src/main.c
+# )
+# # NORDIC SDK APP END
+
+FILE(GLOB app_sources src/*.c)
+target_sources(app PRIVATE ${app_sources})
+
